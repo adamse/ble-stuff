@@ -1,5 +1,13 @@
 # BLE experiments
 
+```
+# setup
+python -mvenv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+```
+
 ## Aranet4
 
 Capture "smart home integrations" broadcast packages in passive mode.
