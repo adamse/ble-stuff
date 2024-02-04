@@ -82,9 +82,11 @@ class Logger:
         raw = adv.manufacturer_data[mfg_id]
         status = decode_status(raw)
         payload = decode_payload(raw)
-        print(d)
-        print(status)
-        print(payload)
+        if d.name != "Aranet4 20D17":
+            return
+        print(d, f"co2: {payload['co2']}")
+        # print(status)
+        # print(payload)
 
 class DbLogger:
     def __init__(self, con):
